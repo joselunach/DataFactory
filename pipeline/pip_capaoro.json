@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "pip_capaoro",
 	"properties": {
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "Transferir a Capa Oro",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/joselunach90@hotmail.com/Transferir datos de Capa Bronce hacia Capa Plata"
+					"notebookPath": "/Users/joselunach90@hotmail.com/Transferir datos de Capa Plata a Capa Oro"
 				},
 				"linkedServiceName": {
 					"referenceName": "Databricks_Datafactory",
