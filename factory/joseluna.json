@@ -1,0 +1,9 @@
+{
+	"name": "joseluna",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7a8ecc5d-9f42-48bf-b662-7647295719fe",
+		"tenantId": "0143f62e-76f0-4c9f-b04e-db115afc9dae"
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"name": "Archivosinputcopy_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkContenedorADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"NombredeArchivo": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().NombredeArchivo",
+					"type": "Expression"
+				},
+				"folderPath": "input",
+				"fileSystem": "jlunacontenedor"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Cod_Categoria",
+				"type": "String"
+			},
+			{
+				"name": "Nombre",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
